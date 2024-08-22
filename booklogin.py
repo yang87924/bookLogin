@@ -26,7 +26,7 @@ else:
 # 有GUI
 page = ChromiumPage()
 # 沒有GUI
-page = ChromiumPage(co)
+# page = ChromiumPage(co)
 # 跳轉到登錄頁面
 page.get('https://cart.books.com.tw/member/login?loc=customer_003&url=https%3A%2F%2Fwww.books.com.tw%2F')
 print('username'+username)
