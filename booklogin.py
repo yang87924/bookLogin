@@ -23,9 +23,10 @@ else:
     co.set_argument('--no-sandbox')  # 無沙盒模式
     co.auto_port()
 
-# 創建頁面對象並啟動或接管瀏覽器
+# 有GUI
 page = ChromiumPage()
-
+# 沒有GUI
+page = ChromiumPage(co)
 # 跳轉到登錄頁面
 page.get('https://cart.books.com.tw/member/login?loc=customer_003&url=https%3A%2F%2Fwww.books.com.tw%2F')
 print('username'+username)
